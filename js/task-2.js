@@ -1,10 +1,12 @@
 function calcAverageCalories(days) {
   let average = 0;
   let sum = 0;
+
   for (const i of days) {
     sum += i.calories;
+    average = sum / days.length;
   }
-  average = sum / days.length;
+
   return average;
 }
 
